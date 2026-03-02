@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.taploop.com.mx/sitemap.xml
+Sitemap: https://taploop.com.mx/sitemap.xml
