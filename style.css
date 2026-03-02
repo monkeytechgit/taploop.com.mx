@@ -2074,11 +2074,15 @@ details[open] .chev{ transform: rotate(180deg); }
 .personaliza-media {
   display: flex;
   justify-content: flex-end;
+  background: none;
 }
 .personaliza-media img {
   width: 100%;
   max-width: 600px;
-  border-radius: 20px;
+  border-radius: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
   object-fit: contain;
 }
 @media (max-width: 860px) {
