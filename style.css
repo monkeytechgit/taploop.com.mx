@@ -2026,7 +2026,7 @@ details[open] .chev{ transform: rotate(180deg); }
 .cot-disclaimer a{ color:var(--muted); text-decoration:underline; }
 @media(max-width:560px){
   .cot-box{ padding:28px 18px 24px; max-height:95vh; }
-  .cot-row2{ grid-template-columns:1fr; gap:0; }
+  .cot-row2{ grid-template-columns:1fr 1fr; gap:8px; }
   .cot-title{ font-size:19px; }
 }
 
