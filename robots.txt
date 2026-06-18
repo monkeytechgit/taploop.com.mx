@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Archivos de descubrimiento para buscadores
+Sitemap: https://www.taploop.com.mx/sitemap.xml
+
+# Recursos del sitio permitidos para renderizado e indexación correcta
+Allow: /assets/
+Allow: /style.css
+Allow: /script.js
+
+# Evitar indexación de archivos temporales o de desarrollo si llegan a existir
+Disallow: /.git/
+Disallow: /.codex/
+Disallow: /.agents/
+Disallow: /node_modules/
+Disallow: /tmp/
+Disallow: /private/
