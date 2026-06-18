@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Archivos de descubrimiento para buscadores
-Sitemap: https://www.taploop.com.mx/sitemap.xml
+Sitemap: https://taploop.com.mx/sitemap.xml
 
 # Recursos del sitio permitidos para renderizado e indexación correcta
 Allow: /assets/
