@@ -176,7 +176,7 @@ const proposalOptions = [
   },
   {
     value: 'asesoria',
-    label: 'Necesito asesoría para elegir',
+    label: 'Ayúdame a elegir',
     icon: 'fa-solid fa-comments',
   },
 ];
@@ -275,6 +275,7 @@ const createProposalModal = () => {
               <option value="pvc">Tarjeta NFC Digital PVC</option>
               <option value="metalica">Tarjeta NFC Digital Metálica</option>
               <option value="ambas">Ambas</option>
+              <option value="asesoria">Ayúdame a elegir</option>
             </select>
           </label>
 
@@ -372,7 +373,7 @@ const updateProposalSelection = (groupName, value) => {
   if (!input) return;
 
   if (input.tagName === 'SELECT') {
-    input.value = value === 'equipo' || value === 'asesoria' ? 'ambas' : value;
+    input.value = value === 'equipo' ? 'ambas' : value;
   } else {
     input.value = value;
   }
