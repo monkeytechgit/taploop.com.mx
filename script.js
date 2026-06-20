@@ -263,7 +263,7 @@ const createProposalModal = () => {
 
       <form class="proposal-form" data-proposal-form>
         <div class="proposal-form__intro">
-          <img class="proposal-form__logo" src="assets/images/taploop-logo.png" alt="TapLoop" loading="lazy" decoding="async">
+          <img class="proposal-form__logo" src="assets/images/taploop-logo.webp" alt="TapLoop" loading="lazy" decoding="async">
           <h2 id="proposal-modal-title">Solicita tu propuesta</h2>
           <p>Cuéntanos qué necesitas y prepararemos una opción personalizada.</p>
         </div>
