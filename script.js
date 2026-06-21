@@ -193,7 +193,7 @@ const getPageSolution = () => {
   if (path.endsWith('/tarjeta-digital-nfc-metalica-taploop.html')) return 'metalica';
   if (path.endsWith('/para-equipos.html')) return 'ambas';
 
-  return 'ambas';
+  return 'asesoria';
 };
 
 const getSolutionFromTrigger = (trigger) => {
@@ -272,10 +272,10 @@ const createProposalModal = () => {
           <label class="proposal-field">
             <span>Tipo de solución <b aria-hidden="true">*</b></span>
             <select name="solution" required>
+              <option value="asesoria" selected>Ayúdame a elegir</option>
               <option value="pvc">Tarjeta NFC Digital PVC</option>
               <option value="metalica">Tarjeta NFC Digital Metálica</option>
               <option value="ambas">Ambas</option>
-              <option value="asesoria">Ayúdame a elegir</option>
             </select>
           </label>
 
