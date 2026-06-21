@@ -53,13 +53,13 @@ button, input, textarea, select { font: inherit; }
   align-items: center;
   justify-content: center;
   gap: 9px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: -.3px;
   line-height: 1;
   text-align: center;
 }
-.shipping-banner i { font-size: 20px; }
+.shipping-banner i { font-size: 16px; }
 .shipping-banner__flag {
   font-size: 16px;
   line-height: 1;
@@ -575,8 +575,8 @@ body.proposal-modal-open {
   .container { width: min(100% - 24px, var(--container)); }
   .shipping-banner { height: 32px; }
   .shipping-banner__content { gap: 5px; font-size: 10.5px; letter-spacing: -.2px; }
-  .shipping-banner i { font-size: 15px; }
-  .shipping-banner__flag { font-size: 15px; }
+  .shipping-banner i { font-size: 14px; }
+  .shipping-banner__flag { font-size: 14px; }
   .site-header--with-promo .main-nav { top: 106px; }
   .nav-wrap { min-height: 74px; }
   .brand { font-size: 27px; }
