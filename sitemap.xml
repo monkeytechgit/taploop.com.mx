@@ -3,155 +3,155 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.taploop.com.mx/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/hero2-tarjeta-nfc.webp</image:loc>
-      <image:title>Tarjeta de presentación digital NFC TapLoop</image:title>
-      <image:caption>Tarjeta de presentación digital NFC personalizada en México con perfil digital, QR, WhatsApp y diseño de marca.</image:caption>
+      <image:title>TapLoop México tarjeta de presentación digital NFC</image:title>
+      <image:caption>Tarjeta de presentación digital NFC personalizada en México con opciones PVC y metal, perfil editable, QR, WhatsApp y diseño de marca.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjetas-nfc.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/producto-pvc-composicion.webp</image:loc>
-      <image:title>Tarjetas de presentación digital NFC PVC y metálicas TapLoop</image:title>
-      <image:caption>Comparativa de tarjetas de presentación digital NFC PVC y metálicas con perfil digital TapLoop.</image:caption>
+      <image:title>Tarjetas NFC PVC y metal en México TapLoop</image:title>
+      <image:caption>Comparativa de tarjetas de presentación digital NFC PVC y metal con perfil digital editable, QR, WhatsApp y diseño personalizado TapLoop.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/pvc/pvc-1.webp</image:loc>
-      <image:title>Tarjeta de presentación digital NFC PVC TapLoop</image:title>
-      <image:caption>Tarjeta de presentación digital NFC PVC personalizada con perfil digital editable, QR, WhatsApp y redes.</image:caption>
+      <image:title>Tarjeta digital NFC PVC en México TapLoop</image:title>
+      <image:caption>Tarjeta digital NFC PVC personalizada con perfil editable, QR, WhatsApp, redes, sitio web y contacto guardable para ventas y networking.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/pvc/pvc-2.webp</image:loc>
-      <image:title>Tarjeta NFC PVC personalizada con QR</image:title>
-      <image:caption>Diseño de tarjeta NFC PVC TapLoop con código QR y perfil digital editable.</image:caption>
+      <image:title>Tarjeta NFC PVC personalizada con QR TapLoop</image:title>
+      <image:caption>Diseño de tarjeta NFC PVC TapLoop con código QR, tecnología NFC y perfil digital editable para profesionales en México.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/metal/metal-1.webp</image:loc>
-      <image:title>Tarjeta de presentación digital NFC metálica TapLoop</image:title>
-      <image:caption>Tarjeta de presentación digital NFC metálica personalizada con perfil digital editable y acabado premium.</image:caption>
+      <image:title>Tarjeta NFC metálica en México TapLoop</image:title>
+      <image:caption>Tarjeta NFC metálica personalizada con perfil digital editable, QR, WhatsApp y acabado premium para ejecutivos, consultores y empresas.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/metal/metal-2.webp</image:loc>
-      <image:title>Tarjeta NFC metálica premium con QR</image:title>
-      <image:caption>Tarjeta NFC metálica TapLoop para ejecutivos con QR, perfil digital editable y diseño premium.</image:caption>
+      <image:title>Tarjeta NFC de metal premium con QR TapLoop</image:title>
+      <image:caption>Tarjeta NFC de metal TapLoop para ejecutivos con QR, perfil digital editable, WhatsApp y diseño premium en México.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/para-equipos.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/para-equipos-hero.webp</image:loc>
-      <image:title>Tarjetas de presentación digital NFC para empresas TapLoop</image:title>
-      <image:caption>Soluciones de tarjetas de presentación digital NFC para empresas, colaboradores y equipos comerciales.</image:caption>
+      <image:title>Tarjetas digitales NFC para empresas TapLoop</image:title>
+      <image:caption>Soluciones de tarjetas digitales NFC PVC y metal para empresas, colaboradores, directivos y equipos comerciales en México.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/como-funciona.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/como-funciona-hero.webp</image:loc>
-      <image:title>Cómo funciona una tarjeta de presentación digital NFC</image:title>
-      <image:caption>Proceso para compartir contacto, WhatsApp, redes y sitio web con una tarjeta de presentación digital NFC.</image:caption>
+      <image:title>Cómo funciona una tarjeta NFC digital TapLoop</image:title>
+      <image:caption>Proceso para compartir contacto, WhatsApp, redes, sitio web y enlaces con una tarjeta NFC digital o código QR.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/reviews.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/para-equipos-opcion-pvc.webp</image:loc>
-      <image:title>Reseñas de tarjetas de presentación digital NFC TapLoop</image:title>
-      <image:caption>Opiniones y casos reales de clientes que usan tarjetas de presentación digital NFC TapLoop.</image:caption>
+      <image:title>Reseñas de tarjetas NFC digitales TapLoop México</image:title>
+      <image:caption>Opiniones y casos reales de clientes que usan tarjetas NFC digitales PVC y metal con perfil editable TapLoop.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/acerca-de-taploop.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/para-equipos-hero.webp</image:loc>
-      <image:title>Acerca de TapLoop México</image:title>
-      <image:caption>Empresa mexicana especializada en tarjetas de presentación digital NFC y perfiles digitales editables.</image:caption>
+      <image:title>Acerca de TapLoop México tarjetas digitales NFC</image:title>
+      <image:caption>Empresa mexicana especializada en tarjetas de presentación digital NFC PVC y metal, perfiles digitales editables y soluciones para equipos.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/quienes-somos.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/equipo-taploop.webp</image:loc>
-      <image:title>Quiénes somos TapLoop México</image:title>
-      <image:caption>TapLoop México crea tarjetas de presentación digital NFC, perfiles digitales y soluciones de contacto inteligente.</image:caption>
+      <image:title>Quiénes somos TapLoop México tarjetas NFC</image:title>
+      <image:caption>TapLoop México crea tarjetas NFC PVC y metal, perfiles digitales y soluciones de contacto inteligente para empresas.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/que-hacemos.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/para-equipos-opcion-pvc.webp</image:loc>
-      <image:title>Qué hace TapLoop</image:title>
-      <image:caption>Diseño, programación y entrega de tarjetas de presentación digital NFC con perfil digital editable.</image:caption>
+      <image:title>Qué hace TapLoop tarjetas NFC PVC y metal</image:title>
+      <image:caption>Diseño, programación y entrega de tarjetas NFC PVC y metal con perfil digital editable, código QR, WhatsApp y enlaces.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/experiencia-proyectos.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/para-equipos-caso-corporativo.webp</image:loc>
-      <image:title>Proyectos de tarjetas de presentación digital NFC TapLoop</image:title>
-      <image:caption>Experiencia en tarjetas de presentación digital NFC y perfiles digitales para empresas, equipos comerciales y directivos.</image:caption>
+      <image:title>Proyectos de tarjetas NFC para empresas TapLoop</image:title>
+      <image:caption>Experiencia en tarjetas NFC PVC y metal con perfiles digitales para empresas, equipos comerciales, directivos y eventos.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/contacto-redes.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/para-equipos-opcion-pvc.webp</image:loc>
-      <image:title>Cotizar tarjeta de presentación digital NFC TapLoop</image:title>
-      <image:caption>Contacto TapLoop para cotizar tarjetas de presentación digital NFC PVC, metálicas, perfiles digitales y soluciones para equipos.</image:caption>
+      <image:title>Cotizar tarjetas NFC PVC y metal TapLoop México</image:title>
+      <image:caption>Contacto TapLoop para cotizar tarjetas NFC PVC y metal, perfiles digitales, QR, WhatsApp y soluciones para equipos.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/aviso-de-privacidad.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/terminos.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>
