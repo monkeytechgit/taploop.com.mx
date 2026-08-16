@@ -7,7 +7,7 @@
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
     <image:image>
-      <image:loc>https://www.taploop.com.mx/assets/image/hero-index.png</image:loc>
+      <image:loc>https://www.taploop.com.mx/assets/image/hero-index.webp</image:loc>
       <image:title>Tarjeta de presentación digital NFC TapLoop</image:title>
       <image:caption>Tarjeta de presentación digital NFC personalizada con opciones PVC y metal, perfil editable, QR, WhatsApp y diseño de marca.</image:caption>
     </image:image>
@@ -18,7 +18,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.png</image:loc>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
       <image:title>Tarjetas NFC PVC y metálicas con perfil digital TapLoop</image:title>
       <image:caption>Comparativa de tarjetas de presentación digital NFC PVC y metal con perfil digital editable, QR, WhatsApp y diseño personalizado TapLoop.</image:caption>
     </image:image>
@@ -29,12 +29,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.png</image:loc>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
       <image:title>Tarjeta de presentación digital NFC PVC TapLoop</image:title>
       <image:caption>Tarjeta digital NFC PVC personalizada con perfil editable, QR, WhatsApp, redes, sitio web y contacto guardable para ventas y networking.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto2pvc.png</image:loc>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto2pvc.webp</image:loc>
       <image:title>Tarjeta NFC PVC personalizada con QR TapLoop</image:title>
       <image:caption>Diseño de tarjeta NFC PVC TapLoop con código QR, tecnología NFC y perfil digital editable para profesionales.</image:caption>
     </image:image>
@@ -45,12 +45,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1metal.png</image:loc>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1metal.webp</image:loc>
       <image:title>Tarjeta NFC metálica personalizada con perfil digital TapLoop</image:title>
       <image:caption>Tarjeta NFC metálica personalizada con perfil digital editable, QR, WhatsApp y acabado premium para ejecutivos, consultores y empresas.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto2metal.png</image:loc>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto2metal.webp</image:loc>
       <image:title>Tarjeta NFC de metal premium con QR TapLoop</image:title>
       <image:caption>Tarjeta NFC de metal TapLoop para ejecutivos con QR, perfil digital editable, WhatsApp y diseño premium.</image:caption>
     </image:image>

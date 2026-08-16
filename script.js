@@ -90,6 +90,16 @@ const setupPageMotion = () => {
   });
 };
 
+const resetPageTransitionState = () => {
+  document.body.classList.remove('is-page-leaving');
+};
+
+window.addEventListener('pageshow', resetPageTransitionState);
+window.addEventListener('load', resetPageTransitionState);
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) resetPageTransitionState();
+});
+
 setupPageMotion();
 
 if (toggle && nav) {
@@ -148,7 +158,6 @@ document.querySelectorAll('.product-media').forEach((gallery) => {
         const video = document.createElement('video');
         video.src = src;
         video.controls = true;
-        video.muted = true;
         video.playsInline = true;
         video.autoplay = true;
         if (poster) video.poster = poster;
