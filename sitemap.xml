@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.taploop.com.mx/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
     <image:image>
@@ -11,10 +12,24 @@
       <image:title>Tarjeta de presentación digital NFC TapLoop</image:title>
       <image:caption>Tarjeta de presentación digital NFC personalizada con opciones PVC y metal, perfil editable, QR, WhatsApp y diseño de marca.</image:caption>
     </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.taploop.com.mx/assets/images/video-posters/tarjeta-pvc.mp4.webp</video:thumbnail_loc>
+      <video:title>Tarjeta de presentación digital NFC PVC TapLoop en acción</video:title>
+      <video:description>Video de tarjeta NFC PVC TapLoop mostrando cómo se abre y comparte un perfil digital con NFC y código QR.</video:description>
+      <video:content_loc>https://www.taploop.com.mx/assets/vid/tarjeta-pvc.mp4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.taploop.com.mx/assets/images/video-posters/tarjeta-metalica.mp4.webp</video:thumbnail_loc>
+      <video:title>Tarjeta NFC metálica TapLoop en acción</video:title>
+      <video:description>Video de tarjeta NFC metálica TapLoop con perfil digital premium para ejecutivos, consultores y empresas.</video:description>
+      <video:content_loc>https://www.taploop.com.mx/assets/vid/tarjeta-metalica.mp4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjetas-nfc.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -25,7 +40,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -38,10 +53,17 @@
       <image:title>Tarjeta NFC PVC personalizada con QR TapLoop</image:title>
       <image:caption>Diseño de tarjeta NFC PVC TapLoop con código QR, tecnología NFC y perfil digital editable para profesionales.</image:caption>
     </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.taploop.com.mx/assets/images/video-posters/tarjeta-pvc.mp4.webp</video:thumbnail_loc>
+      <video:title>Video de tarjeta de presentación digital NFC PVC TapLoop</video:title>
+      <video:description>Demostración de tarjeta NFC PVC TapLoop con perfil digital editable, contacto guardable, WhatsApp, redes y código QR.</video:description>
+      <video:content_loc>https://www.taploop.com.mx/assets/vid/tarjeta-pvc.mp4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -54,10 +76,17 @@
       <image:title>Tarjeta NFC de metal premium con QR TapLoop</image:title>
       <image:caption>Tarjeta NFC de metal TapLoop para ejecutivos con QR, perfil digital editable, WhatsApp y diseño premium.</image:caption>
     </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.taploop.com.mx/assets/images/video-posters/tarjeta-metalica.mp4.webp</video:thumbnail_loc>
+      <video:title>Video de tarjeta NFC metálica TapLoop</video:title>
+      <video:description>Demostración de tarjeta NFC metálica personalizada con perfil digital, código QR, WhatsApp y acabado premium.</video:description>
+      <video:content_loc>https://www.taploop.com.mx/assets/vid/tarjeta-metalica.mp4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/para-equipos.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -68,7 +97,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/como-funciona.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -79,7 +108,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/acerca-de-taploop.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -90,7 +119,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/quienes-somos.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -101,7 +130,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/que-hacemos.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -112,7 +141,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/experiencia-proyectos.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -123,7 +152,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/contacto-redes.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
@@ -134,13 +163,13 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/aviso-de-privacidad.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/terminos.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>
