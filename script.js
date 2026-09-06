@@ -563,6 +563,18 @@ const closeProposalConfirmationModal = () => {
   lastFocusedElement?.focus?.();
 };
 
+const trackGoogleAdsQuoteConversion = () => {
+  try {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-18177290983/c5TNCJiOhfAcEOf1zdtD',
+      });
+    }
+  } catch (error) {
+    console.warn('No se pudo registrar la conversion de Google Ads.', error);
+  }
+};
+
 proposalModal.querySelectorAll('[data-proposal-close]').forEach((button) => {
   button.addEventListener('click', closeProposalModal);
 });
@@ -626,6 +638,7 @@ proposalForm.addEventListener('submit', async (event) => {
 
   closeProposalModal();
   openProposalConfirmationModal();
+  trackGoogleAdsQuoteConversion();
   setProposalLoading(false);
 });
 
