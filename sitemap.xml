@@ -40,7 +40,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -63,7 +63,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -83,6 +83,13 @@
       <video:content_loc>https://www.taploop.com.mx/assets/vid/tarjeta-metalica.mp4</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.taploop.com.mx/assets/resenas/posters/taploop_m.MOV.webp</video:thumbnail_loc>
+      <video:title>Video de tarjeta NFC metálica TapLoop entregada</video:title>
+      <video:description>Video adicional de tarjeta NFC metálica TapLoop con acabado premium y código QR.</video:description>
+      <video:content_loc>https://www.taploop.com.mx/assets/resenas/taploop_m.MOV</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/para-equipos.html</loc>
@@ -94,6 +101,34 @@
       <image:title>Tarjetas NFC para empresas y equipos TapLoop</image:title>
       <image:caption>Soluciones de tarjetas NFC PVC y metal para empresas, colaboradores, directivos y equipos comerciales.</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/resenas.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/resenas/res4_p.webp</image:loc>
+      <image:title>Trabajo realizado de tarjeta NFC PVC TapLoop</image:title>
+      <image:caption>Ejemplo de tarjeta NFC PVC personalizada entregada por TapLoop con perfil digital y QR.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/resenas/res2_m.webp</image:loc>
+      <image:title>Trabajo realizado de tarjeta NFC metálica TapLoop</image:title>
+      <image:caption>Ejemplo de tarjeta NFC metálica personalizada entregada por TapLoop con acabado premium.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/resenas/res11_p.webp</image:loc>
+      <image:title>Reseña de cliente TapLoop</image:title>
+      <image:caption>Captura de reseña de cliente sobre tarjeta NFC PVC TapLoop.</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.taploop.com.mx/assets/resenas/posters/res13_p.MOV.webp</video:thumbnail_loc>
+      <video:title>Video de trabajo realizado en tarjeta NFC PVC TapLoop</video:title>
+      <video:description>Video de tarjeta NFC PVC personalizada TapLoop dentro de la galería de trabajos realizados.</video:description>
+      <video:content_loc>https://www.taploop.com.mx/assets/resenas/res13_p.MOV</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/como-funciona.html</loc>
