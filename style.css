@@ -2543,3 +2543,19 @@ textarea {
     max-height: 260px;
   }
 }
+
+/* Blog */
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+.blog-card { display: flex; flex-direction: column; gap: 10px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; transition: transform .2s ease, box-shadow .2s ease; }
+.blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.blog-card__cat { font-size: 13px; font-weight: 600; color: var(--orange); }
+.blog-card h2 { margin: 0; font-size: 22px; line-height: 1.25; color: #111; }
+.blog-card p { margin: 0; color: var(--muted); }
+.blog-card__more { margin-top: auto; font-weight: 600; color: var(--orange-dark); }
+.blog-article h2 { margin: 36px 0 10px; }
+.blog-article h3 { margin: 20px 0 6px; }
+.blog-article p { font-size: 18px; line-height: 1.7; }
+.blog-cta { margin-top: 48px; padding: 32px; border-radius: var(--radius); background: var(--orange-soft); }
+.blog-cta h2 { margin-top: 0; }
+.blog-cta .btn { margin: 6px 10px 0 0; }
+.blog-back { margin-top: 32px; font-weight: 600; }
