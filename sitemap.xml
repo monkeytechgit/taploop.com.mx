@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.taploop.com.mx/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/hero-index.webp</image:loc>
     </image:image>
@@ -18,10 +18,16 @@
       <video:description>Demostración de una tarjeta NFC metálica TapLoop con perfil digital para profesionales y empresas.</video:description>
       <video:content_loc>https://www.taploop.com.mx/assets/vid/tarjeta-metalica.mp4</video:content_loc>
     </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/8q5r5taEo6o/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>TapLoop: Tutorial completo de la plataforma</video:title>
+      <video:description>Tutorial completo de la plataforma TapLoop para tarjeta digital NFC, leads y analíticas.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube-nocookie.com/embed/8q5r5taEo6o</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjetas-nfc.html</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
     </image:image>
@@ -31,7 +37,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
     </image:image>
@@ -59,10 +65,16 @@
       <video:description>Demostración de una tarjeta NFC PVC personalizada TapLoop con perfil digital, NFC y código QR.</video:description>
       <video:content_loc>https://www.taploop.com.mx/assets/vid/tarjeta-pvc.mp4</video:content_loc>
     </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/VVfdq-J2Q08/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Cómo usar tu tarjeta TapLoop</video:title>
+      <video:description>Guía paso a paso para usar una tarjeta TapLoop con tap NFC y código QR en PVC y metálica.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube-nocookie.com/embed/VVfdq-J2Q08</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1metal.webp</image:loc>
     </image:image>
@@ -96,10 +108,16 @@
       <video:description>Ejemplo en video de una tarjeta NFC metálica TapLoop terminada y lista para uso.</video:description>
       <video:content_loc>https://www.taploop.com.mx/assets/resenas/taploop_m.MOV</video:content_loc>
     </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/VVfdq-J2Q08/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Cómo usar tu tarjeta TapLoop</video:title>
+      <video:description>Guía paso a paso para usar una tarjeta TapLoop con tap NFC y código QR en PVC y metálica.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube-nocookie.com/embed/VVfdq-J2Q08</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/para-equipos.html</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/images/para-equipos-hero.webp</image:loc>
     </image:image>
@@ -109,10 +127,16 @@
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/equipo-taploop.webp</image:loc>
     </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/8q5r5taEo6o/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>TapLoop: Tutorial completo de la plataforma</video:title>
+      <video:description>Tutorial completo de la plataforma TapLoop para tarjeta digital NFC, leads y analíticas.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube-nocookie.com/embed/8q5r5taEo6o</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/resenas.html</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/resenas/res4_p.webp</image:loc>
     </image:image>
@@ -138,6 +162,12 @@
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/hero-como-funciona.webp</image:loc>
     </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/8q5r5taEo6o/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>TapLoop: Tutorial completo de la plataforma</video:title>
+      <video:description>Tutorial completo de la plataforma TapLoop para tarjeta digital NFC, leads y analíticas.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube-nocookie.com/embed/8q5r5taEo6o</video:player_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/acerca-de-taploop.html</loc>
