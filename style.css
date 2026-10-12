@@ -1858,7 +1858,9 @@ a.btn[href*="subject=propuesta"],
 .btn-primary.nav-cta,
 .product-card__quote {
   color: #fff !important;
-  background: linear-gradient(135deg, var(--orange), #ff704f) !important;
+  -webkit-text-fill-color: #fff;
+  background-color: var(--orange) !important;
+  background-image: linear-gradient(135deg, var(--orange), #ff704f) !important;
   border-color: transparent !important;
 }
 
@@ -1871,7 +1873,9 @@ a.btn[href*="subject=propuesta"]:hover,
 .btn-primary.nav-cta:hover,
 .product-card__quote:hover {
   color: #fff !important;
-  background: linear-gradient(135deg, var(--orange-dark), var(--orange)) !important;
+  -webkit-text-fill-color: #fff;
+  background-color: var(--orange-dark) !important;
+  background-image: linear-gradient(135deg, var(--orange-dark), var(--orange)) !important;
 }
 
 a.btn[href="#cotizacion"] .fa-arrow-up-right-from-square,
@@ -1884,6 +1888,7 @@ a.btn[href*="subject=propuesta"] .fa-arrow-up-right-from-square,
 .product-card__quote .fa-arrow-up-right-from-square {
   background: rgba(255, 255, 255, .2);
   color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 
 /* Teams story refresh */
