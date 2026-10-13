@@ -48,7 +48,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://cdnjs.cloudflare.com" rel="dns-prefetch"/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/></noscript>
 <link href="style.css" rel="stylesheet"/>
 <style>
     .skip-link {
@@ -91,10 +91,44 @@
       "description": "TapLoop crea tarjetas NFC personalizadas, tarjetas de presentación digital y perfiles digitales para profesionales, equipos y empresas en México.",
       "email": "info@taploop.com.mx",
       "telephone": "+52-664-305-3834",
-      "areaServed": {
-        "@type": "Country",
-        "name": "México"
-      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "México"
+        },
+        { "@type": "State", "name": "Aguascalientes" },
+        { "@type": "State", "name": "Baja California" },
+        { "@type": "State", "name": "Baja California Sur" },
+        { "@type": "State", "name": "Campeche" },
+        { "@type": "State", "name": "Chiapas" },
+        { "@type": "State", "name": "Chihuahua" },
+        { "@type": "State", "name": "Ciudad de México" },
+        { "@type": "State", "name": "Coahuila" },
+        { "@type": "State", "name": "Colima" },
+        { "@type": "State", "name": "Durango" },
+        { "@type": "State", "name": "Estado de México" },
+        { "@type": "State", "name": "Guanajuato" },
+        { "@type": "State", "name": "Guerrero" },
+        { "@type": "State", "name": "Hidalgo" },
+        { "@type": "State", "name": "Jalisco" },
+        { "@type": "State", "name": "Michoacán" },
+        { "@type": "State", "name": "Morelos" },
+        { "@type": "State", "name": "Nayarit" },
+        { "@type": "State", "name": "Nuevo León" },
+        { "@type": "State", "name": "Oaxaca" },
+        { "@type": "State", "name": "Puebla" },
+        { "@type": "State", "name": "Querétaro" },
+        { "@type": "State", "name": "Quintana Roo" },
+        { "@type": "State", "name": "San Luis Potosí" },
+        { "@type": "State", "name": "Sinaloa" },
+        { "@type": "State", "name": "Sonora" },
+        { "@type": "State", "name": "Tabasco" },
+        { "@type": "State", "name": "Tamaulipas" },
+        { "@type": "State", "name": "Tlaxcala" },
+        { "@type": "State", "name": "Veracruz" },
+        { "@type": "State", "name": "Yucatán" },
+        { "@type": "State", "name": "Zacatecas" }
+      ],
       "contactPoint": [
         {
           "@type": "ContactPoint",
@@ -231,10 +265,44 @@
       "provider": {
         "@id": "https://www.taploop.com.mx/#organization"
       },
-      "areaServed": {
-        "@type": "Country",
-        "name": "México"
-      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "México"
+        },
+        { "@type": "State", "name": "Aguascalientes" },
+        { "@type": "State", "name": "Baja California" },
+        { "@type": "State", "name": "Baja California Sur" },
+        { "@type": "State", "name": "Campeche" },
+        { "@type": "State", "name": "Chiapas" },
+        { "@type": "State", "name": "Chihuahua" },
+        { "@type": "State", "name": "Ciudad de México" },
+        { "@type": "State", "name": "Coahuila" },
+        { "@type": "State", "name": "Colima" },
+        { "@type": "State", "name": "Durango" },
+        { "@type": "State", "name": "Estado de México" },
+        { "@type": "State", "name": "Guanajuato" },
+        { "@type": "State", "name": "Guerrero" },
+        { "@type": "State", "name": "Hidalgo" },
+        { "@type": "State", "name": "Jalisco" },
+        { "@type": "State", "name": "Michoacán" },
+        { "@type": "State", "name": "Morelos" },
+        { "@type": "State", "name": "Nayarit" },
+        { "@type": "State", "name": "Nuevo León" },
+        { "@type": "State", "name": "Oaxaca" },
+        { "@type": "State", "name": "Puebla" },
+        { "@type": "State", "name": "Querétaro" },
+        { "@type": "State", "name": "Quintana Roo" },
+        { "@type": "State", "name": "San Luis Potosí" },
+        { "@type": "State", "name": "Sinaloa" },
+        { "@type": "State", "name": "Sonora" },
+        { "@type": "State", "name": "Tabasco" },
+        { "@type": "State", "name": "Tamaulipas" },
+        { "@type": "State", "name": "Tlaxcala" },
+        { "@type": "State", "name": "Veracruz" },
+        { "@type": "State", "name": "Yucatán" },
+        { "@type": "State", "name": "Zacatecas" }
+      ],
       "audience": {
         "@type": "Audience",
         "audienceType": "Profesionales, ventas, networking, equipos y empresas"
@@ -742,12 +810,16 @@
 <div>
 <a class="brand footer-brand" href="index.html"><img alt="TapLoop México" decoding="async" loading="eager" src="assets/images/taploop-logo.webp"/></a>
 <p>Tarjetas de presentación digital NFC y perfiles digitales personalizados para profesionales, equipos y empresas en México.</p>
+<p class="footer-coverage">Enviamos tarjetas NFC a toda la República Mexicana: Ciudad de México, Guadalajara, Monterrey, Puebla, Querétaro, Tijuana, Cancún, Mérida, León, Toluca, San Luis Potosí, Aguascalientes, Hermosillo, Culiacán, Saltillo, Veracruz, Morelia, Oaxaca, Chihuahua y más de 100 ciudades en México.</p>
 </div>
 <div>
 <h3>Soluciones</h3>
 <a href="tarjeta-digital-nfc-taploop.html">Tarjeta NFC PVC</a>
 <a href="tarjeta-digital-nfc-metalica-taploop.html">Tarjeta NFC metálica</a>
 <a href="para-equipos.html">Soluciones para equipos</a>
+<a href="tarjetas-nfc-queretaro.html">Tarjetas NFC en Querétaro</a>
+<a href="tarjetas-nfc-leon.html">Tarjetas NFC en León</a>
+<a href="tarjetas-nfc-merida.html">Tarjetas NFC en Mérida</a>
 </div>
 <div>
 <h3>Información</h3>
