@@ -312,6 +312,21 @@
         "itemCondition": "https://schema.org/NewCondition",
         "seller": {
           "@id": "https://www.taploop.com.mx/#organization"
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "MX",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+          "merchantReturnLink": "https://www.taploop.com.mx/terminos.html"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "MXN" },
+          "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "MX" },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "transitTime": { "@type": "QuantitativeValue", "minValue": 3, "maxValue": 5, "unitCode": "DAY" }
+          }
         }
       },
       "audience": {
@@ -446,6 +461,15 @@
       "thumbnailUrl": "https://img.youtube.com/vi/VVfdq-J2Q08/hqdefault.jpg",
       "embedUrl": "https://www.youtube-nocookie.com/embed/VVfdq-J2Q08",
       "contentUrl": "https://youtu.be/VVfdq-J2Q08",
+      "inLanguage": "es-MX"
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html#video-demo-pvc",
+      "name": "Tarjeta NFC PVC personalizada TapLoop",
+      "description": "Demostración de una tarjeta NFC PVC personalizada TapLoop con perfil digital, NFC y código QR.",
+      "thumbnailUrl": "https://www.taploop.com.mx/assets/images/video-posters/tarjeta-pvc.mp4.webp",
+      "contentUrl": "https://www.taploop.com.mx/assets/vid/tarjeta-pvc.mp4",
       "inLanguage": "es-MX"
     },
     {

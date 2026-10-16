@@ -348,6 +348,7 @@
             "@type": "Product",
             "@id": "https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html#product",
             "name": "Tarjeta NFC Digital PVC",
+            "description": "Tarjeta física de PVC personalizada con tecnología NFC y código QR que abre un perfil digital TapLoop editable con contacto, WhatsApp, redes y enlaces.",
             "url": "https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html",
             "image": "https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp",
             "brand": {
@@ -365,7 +366,22 @@
               "priceCurrency": "MXN",
               "price": "520",
               "availability": "https://schema.org/InStock",
-              "url": "https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html"
+              "url": "https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "MX",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                "merchantReturnLink": "https://www.taploop.com.mx/terminos.html"
+              },
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "MXN" },
+                "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "MX" },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "transitTime": { "@type": "QuantitativeValue", "minValue": 3, "maxValue": 5, "unitCode": "DAY" }
+                }
+              }
             }
           }
         },
@@ -376,6 +392,7 @@
             "@type": "Product",
             "@id": "https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html#product",
             "name": "Tarjeta NFC Metálica",
+            "description": "Tarjeta NFC metálica personalizada en México con acabado negro mate, grabado, perfil digital editable, QR, WhatsApp y diseño corporativo.",
             "url": "https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html",
             "image": "https://www.taploop.com.mx/assets/image/productos/producto1metal.webp",
             "brand": {
@@ -393,7 +410,22 @@
               "priceCurrency": "MXN",
               "price": "850",
               "availability": "https://schema.org/InStock",
-              "url": "https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html"
+              "url": "https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "MX",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                "merchantReturnLink": "https://www.taploop.com.mx/terminos.html"
+              },
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "MXN" },
+                "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "MX" },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "transitTime": { "@type": "QuantitativeValue", "minValue": 3, "maxValue": 5, "unitCode": "DAY" }
+                }
+              }
             }
           }
         }
