@@ -386,9 +386,9 @@ article:hover,
 .product-card__badge { position: absolute; top: 4px; left: 0; z-index: 2; padding: 8px 14px; border-radius: 9px; color: #ff4b5d; background: #fff0f2; font-size: 13px; font-weight: 800; letter-spacing: .3px; }
 .product-card__top { margin-bottom: 12px; }
 .product-card h3 { margin: 0; color: #070707; font-size: 24px; line-height: 1.08; letter-spacing: 0; }
-.product-card__rating { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 7px; margin: 0 0 10px; color: #111; font-size: 13px; font-weight: 700; }
-.product-card__rating span { color: #ffb000; letter-spacing: 1px; font-size: 14px; line-height: 1; }
-.product-card__rating small { color: #777; font-size: 12px; font-weight: 600; }
+.product-card__rating { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 10px; color: #111; font-size: 19px; font-weight: 700; }
+.product-card__rating span { color: #ffb000; letter-spacing: 1px; font-size: 22px; line-height: 1; }
+.product-card__rating small { color: #777; font-size: 16px; font-weight: 600; }
 .product-card p { min-height: 54px; margin: 0 0 18px; color: #777; font-size: 16px; line-height: 1.42; }
 .product-card p strong { color: #6b6b6b; }
 .product-card__price { min-height: auto !important; margin: -8px 0 18px !important; color: #111 !important; font-size: 15px !important; font-weight: 800; }
