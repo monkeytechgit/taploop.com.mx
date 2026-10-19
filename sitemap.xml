@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.taploop.com.mx/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/hero-index.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjetas-nfc.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
     </image:image>
@@ -40,7 +40,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-taploop.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
     </image:image>
@@ -71,7 +71,7 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-digital-nfc-metalica-taploop.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1metal.webp</image:loc>
     </image:image>
