@@ -2616,6 +2616,8 @@ textarea {
 .blog-article h2 { margin: 36px 0 10px; }
 .blog-article h3 { margin: 20px 0 6px; }
 .blog-article p { font-size: 18px; line-height: 1.7; }
+article .about-page-hero p:not(.eyebrow) a,
+.blog-article p:not(.eyebrow):not(.blog-back) a { color: #0d1117; font-weight: 600; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
 .blog-cta { margin-top: 48px; padding: 32px; border-radius: var(--radius); background: var(--orange-soft); }
 .blog-cta h2 { margin-top: 0; }
 .blog-cta .btn { margin: 6px 10px 0 0; }
@@ -2625,3 +2627,23 @@ textarea {
 .blog-toc a, .blog-related a { color: var(--orange-dark); font-weight: 500; }
 .blog-article ul { padding-left: 22px; font-size: 18px; line-height: 1.7; }
 .blog-related { padding-left: 22px; line-height: 1.9; }
+
+/* Guía de tarjetas NFC (tarjetas-nfc.html) */
+.cards-guide-section { background: #fff; }
+.cards-guide-section .section-heading a { color: var(--orange); font-weight: 600; }
+.cards-guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.cards-guide-grid article { display: flex; flex-direction: column; gap: 10px; padding: 26px; background: #fff; border: 1px solid #e8e8e8; border-radius: 18px; }
+.cards-guide-grid h3 { margin: 0; color: #0d1117; font-size: 20px; line-height: 1.25; }
+.cards-guide-grid p { margin: 0; color: #555; font-size: 15px; line-height: 1.65; }
+.cards-guide-grid p a { color: #0d1117; font-weight: 600; text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 3px; }
+.cards-guide-grid article > a { margin-top: auto; padding-top: 6px; color: var(--orange); font-size: 14px; font-weight: 600; }
+.cards-guide-grid article > a i { margin-left: 4px; font-size: 12px; }
+
+@media (max-width: 1050px) {
+  .cards-guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .cards-guide-grid { grid-template-columns: 1fr; }
+  .cards-guide-grid article { padding: 22px; }
+}
