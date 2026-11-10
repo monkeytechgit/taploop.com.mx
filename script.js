@@ -74,6 +74,7 @@ const setupPageMotion = () => {
     if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
     if (link.target && link.target !== '_self') return;
     if (link.hasAttribute('download')) return;
+    if (link.hasAttribute('data-catalog-open')) return;
     if (isQuoteTriggerLabel(label)) return;
 
     const url = new URL(href, window.location.href);

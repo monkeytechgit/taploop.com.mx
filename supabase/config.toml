@@ -1,0 +1,9 @@
+# Proyecto de Supabase de TapLoop (el mismo que guarda quote_requests).
+project_id = "ejhkjyofrazyxtxkohfo"
+
+[functions.create-checkout-session]
+verify_jwt = true
+
+# Stripe no envía un JWT de Supabase: la seguridad la da la firma del webhook.
+[functions.stripe-webhook]
+verify_jwt = false
