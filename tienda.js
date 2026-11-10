@@ -166,6 +166,25 @@
 
   const newId = () => `${Date.now()}-${Math.random().toString(16).slice(2, 7)}`;
 
+  /* ---------- Meta Pixel (eventos de venta) ---------- */
+
+  const trackMeta = (event, params = {}, options) => {
+    try {
+      if (typeof window.fbq === 'function') window.fbq('track', event, { currency: 'MXN', ...params }, options);
+    } catch { /* el píxel nunca debe romper la tienda */ }
+  };
+
+  // id de Meta por producto: pvc, metal, google-1, google-10…
+  const metaContentId = (item) => (isPack(PRODUCTS[item.product]) ? `${item.product}-${item.pack}` : item.product);
+
+  const metaCartData = (summary = cartSummary()) => ({
+    value: summary.total,
+    num_items: summary.count,
+    content_type: 'product',
+    content_ids: summary.lines.map(metaContentId),
+    contents: summary.lines.map((line) => ({ id: metaContentId(line), quantity: line.qty, item_price: line.unit }))
+  });
+
   // Tarjetas de presentación. file (opcional) es el archivo real del logo o diseño.
   const addToCart = async (productId, qty, logo = null, design = 'custom', file = null) => {
     const items = readCart();
@@ -182,6 +201,15 @@
     }
     writeCart(items);
     bumpCartBadge();
+    const product = PRODUCTS[productId];
+    const unit = unitPrice(product, qtyByProduct(items)[productId] || qty);
+    trackMeta('AddToCart', {
+      value: unit * qty,
+      content_name: product.name,
+      content_type: 'product',
+      content_ids: [productId],
+      contents: [{ id: productId, quantity: qty, item_price: unit }]
+    });
   };
 
   // Tarjeta para reseñas de Google: paquetes de 1, 2, 5 o 10 tarjetas.
@@ -196,6 +224,15 @@
     }
     writeCart(items);
     bumpCartBadge();
+    const product = PRODUCTS[productId];
+    const price = product.packs[pack].price;
+    trackMeta('AddToCart', {
+      value: price * qty,
+      content_name: `${product.name} (paquete de ${pack})`,
+      content_type: 'product',
+      content_ids: [`${productId}-${pack}`],
+      contents: [{ id: `${productId}-${pack}`, quantity: qty, item_price: price }]
+    });
   };
 
   const updateQty = (id, delta) => {
@@ -532,6 +569,8 @@
     const buttonHtml = button.innerHTML;
     checkingOut = true;
     button.disabled = true;
+    const metaData = metaCartData(summary);
+    trackMeta('InitiateCheckout', metaData);
     button.innerHTML = '<i aria-hidden="true" class="fa-solid fa-spinner fa-spin"></i> Preparando pago seguro…';
     cartDrawer.querySelector('[data-checkout-notice]').hidden = true;
 
@@ -578,7 +617,7 @@
       }));
 
       try {
-        localStorage.setItem(PENDING_ORDER_KEY, JSON.stringify({ orderId: result.orderId, orderNumber: result.orderNumber, at: Date.now() }));
+        localStorage.setItem(PENDING_ORDER_KEY, JSON.stringify({ orderId: result.orderId, orderNumber: result.orderNumber, at: Date.now(), meta: metaData }));
       } catch { /* sin almacenamiento */ }
       button.innerHTML = '<i aria-hidden="true" class="fa-solid fa-lock"></i> Abriendo pago seguro…';
       window.location.href = result.checkoutUrl;
@@ -759,6 +798,12 @@
     });
 
     update();
+    trackMeta('ViewContent', {
+      value: product.single,
+      content_name: product.name,
+      content_type: 'product',
+      content_ids: [product.id]
+    });
   };
 
   /* ---------- Página de la tarjeta para reseñas de Google (paquetes) ---------- */
@@ -857,6 +902,12 @@
     });
 
     update();
+    trackMeta('ViewContent', {
+      value: product.packs[1].price,
+      content_name: product.name,
+      content_type: 'product',
+      content_ids: Object.keys(product.packs).map((pack) => `${product.id}-${pack}`)
+    });
   };
 
   /* ---------- Galería del producto ---------- */
@@ -1124,7 +1175,16 @@
       numberEl.querySelector('strong').textContent = `#${orderNumber}`;
       numberEl.hidden = false;
     }
-    try { localStorage.removeItem(PENDING_ORDER_KEY); } catch { /* sin almacenamiento */ }
+    try {
+      const pending = JSON.parse(localStorage.getItem(PENDING_ORDER_KEY) || 'null');
+      const trackedKey = `taploopPurchaseTracked:${orderNumber}`;
+      if (pending?.meta && String(pending.orderNumber) === orderNumber && !localStorage.getItem(trackedKey)) {
+        // eventID permite deduplicar si después se conecta la API de Conversiones de Meta.
+        trackMeta('Purchase', pending.meta, { eventID: `pedido-${orderNumber}` });
+        localStorage.setItem(trackedKey, '1');
+      }
+      localStorage.removeItem(PENDING_ORDER_KEY);
+    } catch { /* sin almacenamiento */ }
     clearFiles();
     writeCart([]);
   }
