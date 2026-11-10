@@ -213,14 +213,16 @@
   };
 
   // Tarjeta para reseñas de Google: paquetes de 1, 2, 5 o 10 tarjetas.
-  const addPackToCart = (productId, pack, qty, reviewLinks) => {
+  const addPackToCart = (productId, pack, qty, reviewLinks = [], reviewNote = '') => {
     const items = readCart();
-    const key = reviewLinks.join(',');
-    const existing = items.find((item) => item.product === productId && item.pack === pack && (item.reviewLinks || []).join(',') === key);
+    const key = `${reviewLinks.join(',')}|${reviewNote}`;
+    const existing = items.find((item) => (
+      item.product === productId && item.pack === pack && `${(item.reviewLinks || []).join(',')}|${item.reviewNote || ''}` === key
+    ));
     if (existing) {
       existing.qty = Math.min(existing.qty + qty, MAX_PACKS);
     } else {
-      items.push({ id: newId(), product: productId, pack, qty, reviewLinks });
+      items.push({ id: newId(), product: productId, pack, qty, reviewLinks, reviewNote });
     }
     writeCart(items);
     bumpCartBadge();
@@ -446,7 +448,9 @@
   const packLineMarkup = (line) => {
     const product = line.productData;
     const pack = Number(line.pack);
-    const links = (line.reviewLinks || []).map((url) => `<span class="cart-line__link" title="${escapeHtml(url)}"><i aria-hidden="true" class="fa-brands fa-google"></i>${escapeHtml(url.replace(/^https?:\/\//, ''))}</span>`).join('');
+    let links = (line.reviewLinks || []).map((url) => `<span class="cart-line__link" title="${escapeHtml(url)}"><i aria-hidden="true" class="fa-brands fa-google"></i>${escapeHtml(url.replace(/^https?:\/\//, ''))}</span>`).join('');
+    if (line.reviewNote) links += `<span class="cart-line__link"><i aria-hidden="true" class="fa-solid fa-store"></i>${escapeHtml(line.reviewNote)}</span>`;
+    if (!links) links = '<span class="cart-line__logo cart-line__logo--pending"><i aria-hidden="true" class="fa-regular fa-clock"></i> Enlace: lo envías después</span>';
     return `
       <article class="cart-line">
         <a class="cart-line__media" href="${product.url}"><img src="${product.image}" alt="${product.name}"></a>
@@ -528,7 +532,7 @@
   const whatsappOrderUrl = () => {
     const summary = cartSummary();
     const lines = summary.lines.map((line) => (isPack(line.productData)
-      ? `• ${line.qty} × ${line.productData.name}, paquete de ${line.pack} (${money(line.unit)}) — enlace: ${(line.reviewLinks || []).join(', ')}`
+      ? `• ${line.qty} × ${line.productData.name}, paquete de ${line.pack} (${money(line.unit)}) — enlace: ${[...(line.reviewLinks || []), line.reviewNote].filter(Boolean).join(', ') || 'lo envío después'}`
       : `• ${line.qty} × ${line.productData.name} (${money(line.unit)} c/u) — ${line.design === 'taploop' ? 'diseño TapLoop' : `diseño personalizado, logo: ${line.logo?.name || 'lo envío después'}`}`
     ));
     const text = ['Hola, quiero hacer este pedido en TapLoop:', ...lines, `Total: ${money(summary.total)} · Envío gratis`].join('\n');
@@ -579,7 +583,7 @@
       const files = await Promise.all(items.map((item) => (item.design === 'custom' && item.logo?.name ? loadFile(item.id) : null)));
       const payload = {
         items: items.map((item, index) => (isPack(PRODUCTS[item.product])
-          ? { product: item.product, pack: Number(item.pack), qty: item.qty, reviewLinks: item.reviewLinks || [] }
+          ? { product: item.product, pack: Number(item.pack), qty: item.qty, reviewLinks: item.reviewLinks || [], notes: item.reviewNote || '' }
           : {
             product: item.product,
             qty: item.qty,
@@ -819,7 +823,6 @@
     const addLabel = root.querySelector('[data-add-label]');
     const options = root.querySelectorAll('[data-pack-option]');
     const linksInput = root.querySelector('[data-review-links]');
-    const linksError = root.querySelector('[data-review-error]');
     const clampPacks = (value) => Math.min(Math.max(parseInt(value, 10) || 1, 1), MAX_PACKS);
     const selectedPack = () => Number(root.querySelector('[data-pack-option]:checked')?.value || 1);
 
@@ -843,50 +846,30 @@
       });
     };
 
+    // Opcional: separa los enlaces (Google Maps, g.page…) del texto libre, que se guarda como nota.
     const readLinks = () => {
-      const raw = linksInput.value.split(',').map((value) => value.trim()).filter(Boolean);
-      const valid = [];
-      for (const value of raw) {
+      const links = [];
+      const notes = [];
+      linksInput.value.split(',').map((value) => value.trim()).filter(Boolean).forEach((value) => {
         try {
+          if (/\s/.test(value)) throw new Error('texto');
           const url = new URL(/^https?:\/\//i.test(value) ? value : `https://${value}`);
-          if (!url.hostname.includes('.')) return null;
-          valid.push(url.toString());
+          if (!url.hostname.includes('.')) throw new Error('texto');
+          links.push(url.toString());
         } catch {
-          return null;
+          notes.push(value);
         }
-      }
-      return valid.length ? valid : null;
-    };
-
-    const validLinks = () => {
-      const links = readLinks();
-      linksError.hidden = Boolean(links);
-      linksInput.classList.toggle('is-invalid', !links);
-      if (!links) {
-        linksError.textContent = linksInput.value.trim()
-          ? 'Revisa el enlace: debe ser una dirección web válida (por ejemplo https://g.page/r/...).'
-          : 'Pega el enlace de reseñas de Google de tu negocio para configurar tus tarjetas.';
-        linksInput.focus();
-        linksInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-      return links;
+      });
+      return { links: links.slice(0, 10), note: notes.join(', ').slice(0, 300) };
     };
 
     options.forEach((option) => option.addEventListener('change', update));
     root.querySelector('[data-qty-minus]').addEventListener('click', () => { qtyInput.value = clampPacks(qtyInput.value) - 1; update(); });
     root.querySelector('[data-qty-plus]').addEventListener('click', () => { qtyInput.value = clampPacks(qtyInput.value) + 1; update(); });
     qtyInput.addEventListener('change', update);
-    linksInput.addEventListener('input', () => {
-      if (!linksError.hidden && readLinks()) {
-        linksError.hidden = true;
-        linksInput.classList.remove('is-invalid');
-      }
-    });
-
     const add = () => {
-      const links = validLinks();
-      if (!links) return false;
-      addPackToCart(product.id, selectedPack(), clampPacks(qtyInput.value), links);
+      const { links, note } = readLinks();
+      addPackToCart(product.id, selectedPack(), clampPacks(qtyInput.value), links, note);
       return true;
     };
 

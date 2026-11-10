@@ -149,10 +149,8 @@ const prepareItems = (rawItems: unknown): PreparedItem[] => {
       const pack = GOOGLE_PRODUCT.packs[Number(raw.pack)];
       if (!pack) throw new CheckoutError('INVALID_PACK', 'Paquete no válido.');
       if (!isInt(raw.qty, 1, 10)) throw new CheckoutError('INVALID_QTY', 'Cantidad no válida.');
-      const links = Array.isArray(raw.reviewLinks) ? raw.reviewLinks.map(validReviewLink).filter(Boolean) as string[] : [];
-      if (!links.length || links.length > 10) {
-        throw new CheckoutError('MISSING_REVIEW_LINK', 'Agrega el enlace de reseñas de Google de tu negocio.');
-      }
+      // El enlace es opcional: si no viene, el pedido queda con review_link_pending para pedirlo después.
+      const links = (Array.isArray(raw.reviewLinks) ? raw.reviewLinks.map(validReviewLink).filter(Boolean) as string[] : []).slice(0, 10);
       return {
         position,
         productId: 'google',
@@ -219,6 +217,7 @@ Deno.serve(async (request) => {
       line_total: item.lineTotal,
       design: item.design,
       logo_pending: item.design === 'custom' && !item.file,
+      review_link_pending: item.productId === 'google' && item.reviewLinks.length === 0,
       customer_notes: item.notes || null,
     }))).select('id, position');
     if (itemsError) throw itemsError;

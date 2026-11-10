@@ -3580,3 +3580,4 @@ button:disabled,
 .cards-catalog-item > div:last-child { display: flex; flex: 1; flex-direction: column; }
 .cards-catalog-item .cards-catalog-actions { margin-top: auto; }
 .cards-catalog-grid { align-items: stretch; }
+.pdp-optional { color: #888; font-weight: 500; }
