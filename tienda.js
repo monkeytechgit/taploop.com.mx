@@ -308,7 +308,7 @@
         <h3>${product.name}</h3>
         <p class="catalog-card__rating"><span aria-hidden="true">★★★★★</span> 5.0 · ${product.reviews}</p>
         <p class="catalog-card__tagline">${product.tagline}</p>
-        <p class="catalog-card__price"><strong>${money(product.single)}</strong><s>${money(product.compare)}</s><span>2 o más: ${money(product.multi)} c/u · 5 o más: ${money(product.bulk)} c/u</span></p>
+        <p class="catalog-card__price"><strong>${money(product.single)}</strong><s>${money(product.compare)}</s></p>
         <div class="catalog-card__actions">
           <button class="btn btn-primary" type="button" data-quick-add="${product.id}">Agregar al carrito <i aria-hidden="true" class="fa-solid fa-cart-plus"></i></button>
           <a class="btn btn-product-view" href="${product.url}">Ver detalles <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
@@ -331,7 +331,7 @@
           <a class="catalog-extra" href="${PRODUCTS.google.url}">
             <img src="${PRODUCTS.google.image}" alt="" loading="lazy" decoding="async">
             <span><small>También para tu negocio</small><strong>${PRODUCTS.google.name}</strong><em>${PRODUCTS.google.tagline}</em></span>
-            <span class="catalog-extra__price">Desde ${money(PRODUCTS.google.packs[1].price)} <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></span>
+            <span class="catalog-extra__price">${money(PRODUCTS.google.packs[1].price)} <s>${money(PRODUCTS.google.packs[1].compare)}</s> <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></span>
           </a>
           <p class="catalog-modal__team"><i aria-hidden="true" class="fa-solid fa-users"></i> ¿Equipo de ${TEAM_MIN} o más colaboradores? <button type="button" data-team-quote>Solicita cotización personalizada</button></p>
         </div>`);
@@ -776,7 +776,7 @@
     const linksInput = root.querySelector('[data-review-links]');
     const linksError = root.querySelector('[data-review-error]');
     const clampPacks = (value) => Math.min(Math.max(parseInt(value, 10) || 1, 1), MAX_PACKS);
-    const selectedPack = () => Number(root.querySelector('[data-pack-option]:checked')?.value || 10);
+    const selectedPack = () => Number(root.querySelector('[data-pack-option]:checked')?.value || 1);
 
     const update = () => {
       const pack = selectedPack();
@@ -989,8 +989,8 @@
           <strong>${product.menuTitle}</strong>
           <small>${product.menuText}</small>
           <em>${isPack(product)
-            ? `Desde ${money(product.packs[1].price)} <span>· paquetes de 1 a 10</span>`
-            : `${money(product.single)} <span>· desde ${money(product.bulk)} c/u</span>`}</em>
+            ? `${money(product.packs[1].price)} <s>${money(product.packs[1].compare)}</s>`
+            : `${money(product.single)} <s>${money(product.compare)}</s>`}</em>
         </span>
         <i aria-hidden="true" class="fa-solid fa-arrow-right nav-dropdown__arrow"></i>
       </a>`;

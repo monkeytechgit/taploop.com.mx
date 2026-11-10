@@ -3528,3 +3528,55 @@ img.img-fade.is-loaded { opacity: 1; }
 @media (max-width: 680px) {
   .order-success__card { padding: 40px 20px; border-radius: 24px; }
 }
+
+/* Cursor de mano en todo lo que se puede hacer clic */
+a[href],
+button,
+.btn,
+summary,
+select,
+label:has(> input[type="radio"]),
+label:has(> input[type="checkbox"]),
+label:has(> input[type="file"]),
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"],
+input[type="button"],
+[role="button"],
+[role="link"],
+[data-card-link],
+[data-catalog-open],
+[data-cart-open],
+[data-team-quote],
+[data-product-media] { cursor: pointer; }
+button:disabled,
+.btn:disabled,
+.btn[aria-disabled="true"] { cursor: not-allowed; }
+.cart-panel__checkout:disabled { cursor: wait; }
+.nav-dropdown__text em s,
+.catalog-extra__price s { margin-left: 4px; color: #999; font-weight: 500; }
+
+/* Tres productos en "Elige la opción ideal para ti" */
+.products-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; max-width: 1180px; }
+.cards-catalog-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; max-width: 1220px; }
+.product-card__rating--new { display: flex; align-items: center; gap: 10px; }
+.product-card__new { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; color: var(--orange); font-size: 13px; font-weight: 700; background: var(--orange-soft); border-radius: 999px; }
+.product-card__rating--new small { color: #777; font-size: 14px; }
+@media (max-width: 1050px) {
+  .products-grid,
+  .cards-catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .products-grid,
+  .cards-catalog-grid { grid-template-columns: 1fr; }
+}
+.product-card__rating--new .product-card__new { color: var(--orange); font-size: 13px; letter-spacing: 0; }
+.product-card__rating--new .product-card__new i { color: #f5a623; font-size: 12px; }
+@media (min-width: 1051px) {
+  .cards-catalog-item h2 { font-size: clamp(26px, 2.3vw, 32px); }
+}
+.product-card .product-card__cta { margin-top: auto; }
+.cards-catalog-item { display: flex; flex-direction: column; }
+.cards-catalog-item > div:last-child { display: flex; flex: 1; flex-direction: column; }
+.cards-catalog-item .cards-catalog-actions { margin-top: auto; }
+.cards-catalog-grid { align-items: stretch; }
