@@ -824,7 +824,7 @@
     const options = root.querySelectorAll('[data-pack-option]');
     const linksInput = root.querySelector('[data-review-links]');
     const clampPacks = (value) => Math.min(Math.max(parseInt(value, 10) || 1, 1), MAX_PACKS);
-    const selectedPack = () => Number(root.querySelector('[data-pack-option]:checked')?.value || 1);
+    const selectedPack = () => Number(root.querySelector('[data-pack-option]:checked')?.value || 5);
 
     const update = () => {
       const pack = selectedPack();
