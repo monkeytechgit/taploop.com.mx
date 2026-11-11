@@ -3581,3 +3581,94 @@ button:disabled,
 .cards-catalog-item .cards-catalog-actions { margin-top: auto; }
 .cards-catalog-grid { align-items: stretch; }
 .pdp-optional { color: #888; font-weight: 500; }
+
+/* ---------- Páginas de producto en celular ---------- */
+.pdp-sticky { display: none; }
+
+@media (max-width: 680px) {
+  /* Encabezado y precio */
+  .pdp-buy { gap: 16px; }
+  .pdp-shipping-line { font-size: 14px; }
+  .pdp-title { font-size: clamp(26px, 7.4vw, 32px); }
+  .pdp-rating { flex-wrap: nowrap; gap: 6px; margin-top: -4px; font-size: 13.5px; white-space: nowrap; }
+  .pdp-rating__stars { font-size: 15px; letter-spacing: 1px; }
+  .pdp-price-row { gap: 8px 12px; }
+  .pdp-price { font-size: 32px; }
+  .pdp-price-was { font-size: 18px; }
+  .pdp-save { padding: 6px 11px; font-size: 13px; }
+  .pdp-price-note { font-size: 13px; }
+  .pdp-checks { gap: 8px; }
+  .pdp-checks li { font-size: 15px; }
+  .pdp-promo { padding: 14px 16px; }
+  .pdp-promo p { font-size: 14px; }
+  .pdp-divider span { font-size: 13px; }
+
+  /* Opciones de cantidad y diseño: compactas y sin desbordar */
+  .pdp-options,
+  .pdp-designs { gap: 16px; }
+  .pdp-option { grid-template-columns: 20px minmax(0, 1fr) auto; gap: 12px; padding: 16px 14px; border-radius: 16px; }
+  .pdp-option__radio { width: 20px; height: 20px; }
+  .pdp-option__radio::after { width: 10px; height: 10px; }
+  .pdp-option__main strong { gap: 6px 8px; font-size: 15.5px; }
+  .pdp-option__main small { font-size: 12.5px; }
+  .pdp-option__off { padding: 3px 7px; font-size: 10.5px; }
+  .pdp-option__price strong { font-size: 15.5px; }
+  .pdp-option__price s { font-size: 12px; }
+  .pdp-option__tag { top: -11px; right: 10px; padding: 3px 9px; font-size: 11px; }
+  .pdp-option__quote { font-size: 14px !important; }
+  .pdp-design { grid-template-columns: 20px minmax(0, 1fr); gap: 12px; padding: 16px 14px; }
+  .pdp-design__text strong { font-size: 15.5px; }
+  .pdp-review-link { padding: 16px; }
+  .pdp-review-link__icon { width: 46px; height: 46px; }
+  .pdp-review-link input { height: 50px; padding: 0 14px; font-size: 15px; }
+  .pdp-review-guide summary { width: 100%; justify-content: center; text-align: center; }
+
+  /* Cantidad + Agregar al carrito en una sola fila */
+  .pdp-actions { flex-direction: row; gap: 10px; }
+  .pdp-actions .qty-stepper { justify-content: flex-start; width: auto; height: 56px; padding: 0 2px; }
+  .pdp-actions .qty-stepper button { width: 36px; }
+  .pdp-actions .qty-stepper input { width: 30px; }
+  .pdp-add { min-width: 0; min-height: 56px; padding: 0 14px; font-size: 15px; white-space: nowrap; box-shadow: 0 10px 22px rgba(255, 91, 61, .28); }
+  .pdp-add__long { display: none; }
+  .pdp-buy-now { min-height: 54px; font-size: 15px; }
+  .pdp-tiles div { padding: 12px 14px; font-size: 13px; }
+
+  /* Barra fija inferior */
+  .pdp-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(255, 255, 255, .97);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -10px 30px rgba(17, 17, 17, .1);
+    backdrop-filter: blur(12px);
+    transform: translateY(110%);
+    transition: transform .4s cubic-bezier(.22, 1, .36, 1);
+  }
+  .pdp-sticky.is-visible { transform: none; }
+  body.store-layer-open .pdp-sticky { transform: translateY(110%); }
+  .pdp-sticky__price { display: grid; min-width: 0; line-height: 1.15; }
+  .pdp-sticky__price strong { color: var(--orange); font-size: 18px; white-space: nowrap; }
+  .pdp-sticky__price span { overflow: hidden; color: #777; font-size: 11.5px; white-space: nowrap; text-overflow: ellipsis; }
+  .pdp-sticky__add { flex: 1; justify-content: center; gap: 8px; min-width: 0; min-height: 50px; padding: 0 14px; font-size: 15px; white-space: nowrap; border-radius: 999px; }
+
+  /* WhatsApp: sin globo de texto en producto y por encima de la barra fija */
+  .product-page .whatsapp-float-message { display: none; }
+  .whatsapp-float { transition: bottom .4s cubic-bezier(.22, 1, .36, 1), transform .3s ease; }
+  body.has-sticky-buy .whatsapp-float { bottom: calc(86px + env(safe-area-inset-bottom)); }
+  body.has-sticky-buy .store-toast { bottom: 96px; }
+  body.has-sticky-buy .site-footer { padding-bottom: 90px; }
+}
+
+@media (max-width: 360px) {
+  .pdp-add { padding: 0 10px; font-size: 14px; }
+  .pdp-actions .qty-stepper button { width: 30px; }
+  .pdp-sticky__add { font-size: 14px; }
+  .pdp-sticky__add i { display: none; }
+}

@@ -893,6 +893,45 @@
     });
   };
 
+  /* ---------- Barra fija "Agregar al carrito" en celular ---------- */
+
+  // Aparece abajo mientras el botón principal no está a la vista y usa las opciones ya elegidas.
+  const setupStickyBuy = (root) => {
+    const actions = root.querySelector('.pdp-actions');
+    const addButton = root.querySelector('[data-add-to-cart]');
+    const priceEl = root.querySelector('[data-price]');
+    const wasEl = root.querySelector('[data-price-was]');
+    if (!actions || !addButton || !priceEl || document.querySelector('.pdp-sticky')) return;
+
+    const bar = document.createElement('div');
+    bar.className = 'pdp-sticky';
+    bar.innerHTML = `
+      <div class="pdp-sticky__price">
+        <strong data-sticky-price></strong>
+        <span><s data-sticky-was></s> · Envío gratis</span>
+      </div>
+      <button class="btn btn-primary pdp-sticky__add" type="button"><i aria-hidden="true" class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>`;
+    document.body.append(bar);
+
+    const sync = () => {
+      bar.querySelector('[data-sticky-price]').textContent = priceEl.textContent;
+      bar.querySelector('[data-sticky-was]').textContent = wasEl?.textContent || '';
+    };
+    sync();
+    new MutationObserver(sync).observe(priceEl, { childList: true, characterData: true, subtree: true });
+    bar.querySelector('.pdp-sticky__add').addEventListener('click', () => addButton.click());
+
+    const setVisible = (visible) => {
+      bar.classList.toggle('is-visible', visible);
+      document.body.classList.toggle('has-sticky-buy', visible);
+    };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => setVisible(!entry.isIntersecting), { threshold: 0 }).observe(actions);
+    } else {
+      setVisible(true);
+    }
+  };
+
   /* ---------- Galería del producto ---------- */
 
   let lightbox = null;
@@ -1146,6 +1185,7 @@
   watchHeaderScroll();
   document.querySelectorAll('[data-pdp]').forEach(setupBuyBox);
   document.querySelectorAll('[data-pdp-pack]').forEach(setupPackBox);
+  document.querySelectorAll('[data-pdp], [data-pdp-pack]').forEach(setupStickyBuy);
   document.querySelectorAll('.product-media').forEach(setupGallery);
   renderCart();
   fadeInLazyImages();
