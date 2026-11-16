@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.taploop.com.mx/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/hero-index.webp</image:loc>
     </image:image>
@@ -19,21 +19,21 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjetas-nfc-queretaro.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjetas-nfc-leon.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjetas-nfc-merida.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
     </image:image>
@@ -255,9 +255,114 @@
   </url>
   <url>
     <loc>https://www.taploop.com.mx/tarjeta-nfc-resenas-google.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <image:image>
       <image:loc>https://www.taploop.com.mx/assets/image/productos/google-nfc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-mexico.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-cdmx.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-guadalajara.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-monterrey.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-puebla.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-tijuana.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-mexicali.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-aguascalientes.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-san-luis-potosi.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-toluca.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-morelia.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-hermosillo.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-culiacan.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-chihuahua.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.taploop.com.mx/tarjetas-nfc-saltillo.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image>
+      <image:loc>https://www.taploop.com.mx/assets/image/productos/producto1pvc.webp</image:loc>
     </image:image>
   </url>
 </urlset>
