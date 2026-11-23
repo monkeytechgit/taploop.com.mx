@@ -228,17 +228,35 @@ const proposalModalState = {
   selectedQuantity: '1',
 };
 
+// 'google' no es una opción del formulario: se cotiza como "Ayúdame a elegir" con un comentario prellenado.
+const productPageSolutions = {
+  'tarjeta-digital-nfc-taploop.html': 'pvc',
+  'tarjeta-digital-nfc-metalica-taploop.html': 'metalica',
+  'tarjeta-nfc-resenas-google.html': 'google',
+};
+
+const solutionFromUrl = (url = '') => {
+  const file = url.split(/[?#]/)[0].split('/').pop();
+  return productPageSolutions[file] || null;
+};
+
 const getPageSolution = () => {
   const path = currentPath;
 
-  if (path.endsWith('/tarjeta-digital-nfc-taploop.html')) return 'pvc';
-  if (path.endsWith('/tarjeta-digital-nfc-metalica-taploop.html')) return 'metalica';
+  if (solutionFromUrl(path)) return solutionFromUrl(path);
   if (path.endsWith('/para-equipos.html')) return 'ambas';
 
   return 'asesoria';
 };
 
 const getSolutionFromTrigger = (trigger) => {
+  if (trigger?.dataset?.quoteProduct) return trigger.dataset.quoteProduct;
+  if (trigger?.closest?.('[data-team-quote], .pdp-option--team')) return 'ambas';
+  const cardLinkSolution = solutionFromUrl(trigger?.closest?.('[data-card-link]')?.dataset.cardLink || '');
+  if (cardLinkSolution) return cardLinkSolution;
+  const hrefSolution = solutionFromUrl(trigger?.getAttribute?.('href') || '');
+  if (hrefSolution) return hrefSolution;
+
   const text = `${trigger?.textContent || ''} ${trigger?.getAttribute('aria-label') || ''}`.toLowerCase();
   const card = trigger?.closest('article, .solution-card, .cards-product-card, .cards-catalog-item');
   const cardId = card?.id?.toLowerCase() || '';
@@ -248,6 +266,7 @@ const getSolutionFromTrigger = (trigger) => {
   if (text.includes('pvc') || text.includes('digital')) return 'pvc';
   if (text.includes('equipo') || text.includes('colaborador') || text.includes('empresa')) return 'ambas';
 
+  if (cardText.includes('reseñas de google')) return 'google';
   if (cardId.includes('metalica') || cardText.includes('metálica') || cardText.includes('metalica') || cardText.includes('premium')) return 'metalica';
   if (cardId.includes('pvc') || cardText.includes('pvc')) return 'pvc';
   if (cardText.includes('equipo') || cardText.includes('colaborador') || cardText.includes('empresa')) return 'ambas';
@@ -530,8 +549,12 @@ const openProposalModal = (trigger) => {
   proposalForm.reset();
   proposalError.hidden = true;
   setProposalLoading(false);
-  updateProposalSelection('solution', getSolutionFromTrigger(trigger));
-  updateProposalSelection('quantity', '1');
+  const solution = getSolutionFromTrigger(trigger);
+  updateProposalSelection('solution', solution === 'google' ? 'asesoria' : solution);
+  updateProposalSelection('quantity', trigger?.closest?.('[data-team-quote], .pdp-option--team') ? '10' : '1');
+  if (solution === 'google') {
+    proposalForm.querySelector('[name="comments"]').value = 'Me interesa la tarjeta NFC para reseñas de Google para mi negocio.';
+  }
   refreshProposalMetadata();
   proposalModal.classList.add('is-open');
   proposalModal.setAttribute('aria-hidden', 'false');
@@ -653,7 +676,18 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+// Botones de cotización marcados explícitamente (incluye los que se crean después, como el del menú móvil).
+const QUOTE_TRIGGER_SELECTOR = '[data-quote], [data-team-quote], [data-catalog-open]';
+
+document.addEventListener('click', (event) => {
+  const trigger = event.target.closest(QUOTE_TRIGGER_SELECTOR);
+  if (!trigger) return;
+  event.preventDefault();
+  openProposalModal(trigger);
+});
+
 document.querySelectorAll('a, button').forEach((trigger) => {
+  if (trigger.matches(QUOTE_TRIGGER_SELECTOR)) return;
   const label = normalizeLabel(trigger.textContent || '');
   const href = trigger.getAttribute('href') || '';
   const isProposalTrigger = (

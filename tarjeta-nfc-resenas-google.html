@@ -20,8 +20,6 @@
 <meta property="og:image:height" content="1200" />
 <meta property="og:image:alt" content="Tarjeta NFC TapLoop para reseñas de Google con NFC y código QR" />
 <meta property="product:brand" content="TapLoop" />
-<meta property="product:price:amount" content="549" />
-<meta property="product:price:currency" content="MXN" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Tarjeta NFC para Reseñas de Google en México | TapLoop" />
 <meta name="twitter:description" content="Tarjeta NFC y QR para reseñas de Google: tus clientes la tocan con el celular y te califican en segundos. Pago único, sin apps, envío gratis a todo México." />
@@ -40,53 +38,47 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Product",
-      "@id": "https://www.taploop.com.mx/tarjeta-nfc-resenas-google.html#product",
+      "@type": "Service",
+      "@id": "https://www.taploop.com.mx/tarjeta-nfc-resenas-google.html#service",
       "name": "Tarjeta NFC para reseñas de Google",
-      "description": "Tarjeta NFC y QR para reseñas de Google: tus clientes la tocan con el celular y te califican en segundos. Pago único, sin apps, envío gratis a todo México.",
-      "image": ["https://www.taploop.com.mx/assets/image/productos/google-nfc.webp"],
-      "sku": "TAPLOOP-GOOGLE-REVIEWS",
-      "brand": { "@type": "Brand", "name": "TapLoop" },
+      "serviceType": "Tarjeta NFC para reseñas de Google",
+      "description": "Tarjeta NFC y QR para reseñas de Google: tus clientes la tocan con el celular y te califican en segundos. Sin apps, envío gratis a todo México. Solicita tu cotización.",
+      "url": "https://www.taploop.com.mx/tarjeta-nfc-resenas-google.html",
+      "image": [
+        "https://www.taploop.com.mx/assets/image/productos/google-nfc.webp"
+      ],
       "category": "Tarjetas NFC para negocios",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://www.taploop.com.mx/tarjeta-nfc-resenas-google.html",
-        "priceCurrency": "MXN",
-        "price": "549",
-        "priceSpecification": [
-          { "@type": "UnitPriceSpecification", "price": "549", "priceCurrency": "MXN", "referenceQuantity": { "@type": "QuantitativeValue", "value": 1, "unitText": "tarjeta" } },
-          { "@type": "UnitPriceSpecification", "price": "749", "priceCurrency": "MXN", "referenceQuantity": { "@type": "QuantitativeValue", "value": 2, "unitText": "tarjetas" } },
-          { "@type": "UnitPriceSpecification", "price": "1299", "priceCurrency": "MXN", "referenceQuantity": { "@type": "QuantitativeValue", "value": 5, "unitText": "tarjetas" } },
-          { "@type": "UnitPriceSpecification", "price": "1999", "priceCurrency": "MXN", "referenceQuantity": { "@type": "QuantitativeValue", "value": 10, "unitText": "tarjetas" } }
-        ],
-        "priceValidUntil": "2027-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition",
-        "seller": { "@id": "https://www.taploop.com.mx/#organization" },
-        "hasMerchantReturnPolicy": {
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "MX",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
-          "merchantReturnLink": "https://www.taploop.com.mx/terminos.html"
-        },
-        "shippingDetails": {
-          "@type": "OfferShippingDetails",
-          "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "MXN" },
-          "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "MX" },
-          "deliveryTime": {
-            "@type": "ShippingDeliveryTime",
-            "handlingTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY" },
-            "transitTime": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 3, "unitCode": "DAY" }
-          }
-        }
+      "provider": {
+        "@type": "Organization",
+        "name": "TapLoop",
+        "url": "https://www.taploop.com.mx/"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
       }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.taploop.com.mx/" },
-        { "@type": "ListItem", "position": 2, "name": "Tarjetas NFC", "item": "https://www.taploop.com.mx/tarjetas-nfc.html" },
-        { "@type": "ListItem", "position": 3, "name": "Tarjeta NFC para reseñas de Google", "item": "https://www.taploop.com.mx/tarjeta-nfc-resenas-google.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.taploop.com.mx/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tarjetas NFC",
+          "item": "https://www.taploop.com.mx/tarjetas-nfc.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tarjeta NFC para reseñas de Google",
+          "item": "https://www.taploop.com.mx/tarjeta-nfc-resenas-google.html"
+        }
       ]
     }
   ]
@@ -125,7 +117,7 @@ src="https://www.facebook.com/tr?id=1598253014950484&ev=PageView&noscript=1"
 <a href="blog.html">Blog</a>
 <a href="resenas.html">Reseñas</a>
 </nav>
-<a class="btn btn-primary nav-cta" href="tarjetas-nfc.html">Comprar ahora <i aria-hidden="true" class="fa-solid fa-bag-shopping"></i></a>
+<a class="btn btn-primary nav-cta" href="tarjetas-nfc.html" data-quote>Solicitar cotización <i aria-hidden="true" class="fa-solid fa-file-invoice"></i></a>
 </div>
 </header>
 <main id="contenido-principal">
@@ -138,79 +130,18 @@ src="https://www.facebook.com/tr?id=1598253014950484&ev=PageView&noscript=1"
 </div>
 </div>
 <div class="product-detail-copy">
-<div class="pdp-buy" data-pdp-pack="google">
+<div class="pdp-buy" data-pdp-quote>
 <p class="pdp-shipping-line"><i aria-hidden="true" class="fa-solid fa-truck-fast"></i> Envío gratis a toda la República Mexicana <span aria-hidden="true">🇲🇽</span></p>
 <h1 id="titulo-producto" class="pdp-title">Tarjeta NFC para reseñas de Google</h1>
-<div class="pdp-price-row">
-<strong class="pdp-price" data-price>$1,299 MXN</strong>
-<s class="pdp-price-was" data-price-was>$2,745 MXN</s>
-<span class="pdp-save" data-price-save><i aria-hidden="true" class="fa-solid fa-tag"></i> <span>Ahorra 53%</span></span>
-</div>
-<p class="pdp-price-note" data-pack-note>$260 MXN por tarjeta · envío gratis incluido</p>
 <ul class="pdp-checks">
 <li><i aria-hidden="true" class="fa-solid fa-circle-check"></i> Consigue más reseñas en <strong>segundos</strong></li>
 <li><i aria-hidden="true" class="fa-solid fa-circle-check"></i> Pago único: <strong>sin mensualidades</strong></li>
 <li><i aria-hidden="true" class="fa-solid fa-circle-check"></i> Tamaño de la tarjeta: <strong>85.6 mm × 54 mm</strong></li>
 </ul>
-<div class="pdp-divider"><span>Compra más, ahorra más</span></div>
-<div class="pdp-options" role="radiogroup" aria-label="Elige tu paquete">
-<label class="pdp-option">
-<input type="radio" name="pdp-pack-google" value="1" data-pack-option data-price="549" data-compare="899">
-<span class="pdp-option__radio" aria-hidden="true"></span>
-<span class="pdp-option__main"><strong>1 tarjeta</strong><small>Envío incluido</small></span>
-<span class="pdp-option__price"><strong>$549 MXN</strong><s>$899 MXN</s></span>
-
-</label>
-<label class="pdp-option">
-<input type="radio" name="pdp-pack-google" value="2" data-pack-option data-price="749" data-compare="1098">
-<span class="pdp-option__radio" aria-hidden="true"></span>
-<span class="pdp-option__main"><strong>2 tarjetas <em class="pdp-option__off">32% MENOS</em></strong><small>$374 MXN c/u</small></span>
-<span class="pdp-option__price"><strong>$749 MXN</strong><s>$1,098 MXN</s></span>
-
-</label>
-<label class="pdp-option is-active">
-<input type="radio" name="pdp-pack-google" value="5" data-pack-option data-price="1299" data-compare="2745" checked>
-<span class="pdp-option__radio" aria-hidden="true"></span>
-<span class="pdp-option__main"><strong>5 tarjetas <em class="pdp-option__off">53% MENOS</em></strong><small>$260 MXN c/u</small></span>
-<span class="pdp-option__price"><strong>$1,299 MXN</strong><s>$2,745 MXN</s></span>
-<span class="pdp-option__tag">🔥 Más popular</span>
-</label>
-<label class="pdp-option">
-<input type="radio" name="pdp-pack-google" value="10" data-pack-option data-price="1999" data-compare="5490">
-<span class="pdp-option__radio" aria-hidden="true"></span>
-<span class="pdp-option__main"><strong>10 tarjetas <em class="pdp-option__off">64% MENOS</em></strong><small>$200 MXN c/u</small></span>
-<span class="pdp-option__price"><strong>$1,999 MXN</strong><s>$5,490 MXN</s></span>
-<span class="pdp-option__tag">Mejor precio</span>
-</label>
+<div class="pdp-quote">
+<p class="pdp-quote__text"><i aria-hidden="true" class="fa-solid fa-file-invoice"></i> <span><strong>Precio según cantidad de tarjetas.</strong> Cuéntanos sobre tu negocio y te enviamos tu cotización sin compromiso.</span></p>
+<button class="btn btn-primary pdp-quote__btn" type="button" data-quote data-quote-product="google"><i aria-hidden="true" class="fa-solid fa-file-invoice"></i> Solicitar cotización</button>
 </div>
-<div class="pdp-divider"><span>Personaliza tu tarjeta <span aria-hidden="true">👇</span></span></div>
-<div class="pdp-review-link">
-<label class="pdp-review-link__field">
-<span class="pdp-review-link__icon"><img src="assets/image/productos/google-nfc.webp" alt="" width="48" height="48"></span>
-<span class="visually-hidden">Enlace de Google Maps o de reseñas de tu negocio (opcional)</span>
-<input type="text" inputmode="url" placeholder="https://maps.app.goo.gl/... o https://g.page/r/..." autocomplete="url" data-review-links>
-</label>
-<p class="pdp-review-link__help"><strong>Enlace de tu negocio en Google <span class="pdp-optional">(opcional)</span>.</strong> Pega el enlace de Google Maps de tu negocio o tu enlace de reseñas (g.page). Si tienes más de uno, sepáralos con coma (,). ¿No lo tienes a la mano? Puedes comprar ahora y enviárnoslo después: nosotros lo configuramos.</p>
-<details class="pdp-review-guide">
-<summary><i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i> ¿Cómo encuentro mi enlace de reseñas?</summary>
-<ol>
-<li>Busca tu negocio en Google o abre Google Maps con la cuenta que administra tu Perfil de Empresa.</li>
-<li>En tu perfil, toca <strong>“Pedir reseñas”</strong> (o “Obtener más reseñas”).</li>
-<li>Copia el enlace que aparece (empieza con <strong>https://g.page/r/</strong>) y pégalo arriba.</li>
-<li>También sirve el enlace de tu negocio en <strong>Google Maps</strong>: abre tu negocio, toca <strong>“Compartir”</strong> y copia el enlace.</li>
-</ol>
-<p>¿No lo encuentras? Escríbenos el nombre y la dirección de tu negocio por WhatsApp y te ayudamos.</p>
-</details>
-</div>
-<div class="pdp-actions">
-<div class="qty-stepper" aria-label="Cantidad de paquetes">
-<button type="button" data-qty-minus aria-label="Quitar un paquete">−</button>
-<input type="number" min="1" max="10" value="1" inputmode="numeric" data-qty-input aria-label="Cantidad de paquetes">
-<button type="button" data-qty-plus aria-label="Agregar un paquete">+</button>
-</div>
-<button class="btn btn-primary pdp-add" type="button" data-add-to-cart><i aria-hidden="true" class="fa-solid fa-cart-shopping"></i> Agregar<span class="pdp-add__long"> al carrito</span> · <span data-add-label>$1,299 MXN</span></button>
-</div>
-<button class="btn pdp-buy-now" type="button" data-buy-now><i aria-hidden="true" class="fa-solid fa-lock"></i> Comprar ahora · pago seguro</button>
 <div class="pdp-tiles">
 <div><i aria-hidden="true" class="fa-solid fa-truck-fast"></i><span>Envío gratis a todo México</span></div>
 <div><i aria-hidden="true" class="fa-solid fa-bolt"></i><span>Configurada y lista para usar</span></div>
@@ -240,7 +171,7 @@ src="https://www.facebook.com/tr?id=1598253014950484&ev=PageView&noscript=1"
 </details>
 <details>
 <summary><span class="faq-icon"><i aria-hidden="true" class="fa-solid fa-truck-fast"></i></span>Envío y entrega<b>+</b></summary>
-<div class="product-accordion-body"><p>El envío es gratis a cualquier parte de la República Mexicana y ya está incluido en el precio. Los envíos suelen tardar de 3 a 5 días hábiles. Pagas en línea de forma segura y capturas tu dirección de envío en el mismo paso.</p><p><a href="terminos.html">Ver política de envíos y devoluciones</a></p></div>
+<div class="product-accordion-body"><p>El envío es gratis a cualquier parte de la República Mexicana y ya está incluido en el precio. Los envíos suelen tardar de 3 a 5 días hábiles. Confirmamos tu dirección de envío al aprobar tu cotización.</p><p><a href="terminos.html">Ver política de envíos y devoluciones</a></p></div>
 </details>
 </div>
 </div>
@@ -263,7 +194,7 @@ src="https://www.facebook.com/tr?id=1598253014950484&ev=PageView&noscript=1"
 <h3>Información</h3>
 <a href="tarjetas-nfc-mexico.html">Envíos en México</a>
 <a href="como-funciona.html">Cómo funciona</a>
-<a href="tarjetas-nfc.html" data-catalog-open>Comprar ahora</a>
+<a href="tarjetas-nfc.html" data-quote>Solicitar cotización</a>
 </div>
 <div>
 <h3>Acerca de TapLoop</h3>

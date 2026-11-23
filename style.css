@@ -3088,6 +3088,11 @@ body.store-layer-open { overflow: hidden; }
 .pdp-add.is-added { animation: cart-bump .6s cubic-bezier(.22, 1, .36, 1); }
 .pdp-buy-now { justify-content: center; gap: 10px; width: 100%; min-height: 56px; color: #fff; font-size: 16px; background: #111; border-radius: 999px; }
 .pdp-buy-now:hover { color: #fff; background: #000; box-shadow: 0 12px 26px rgba(0, 0, 0, .22); }
+.pdp-quote { display: grid; gap: 14px; padding: 20px; background: #fff7f4; border: 1px solid rgba(255, 91, 61, .25); border-radius: 18px; }
+.pdp-quote__text { display: flex; gap: 12px; align-items: flex-start; margin: 0; color: #444; font-size: 15px; line-height: 1.55; }
+.pdp-quote__text > i { margin-top: 3px; color: var(--orange); font-size: 18px; }
+.pdp-quote__text strong { color: #111; }
+.pdp-quote__btn { justify-content: center; gap: 10px; width: 100%; min-height: 56px; font-size: 16px; border-radius: 999px; }
 .pdp-team-hint { margin: -6px 0 0; padding: 12px 14px; color: #444; font-size: 14px; background: var(--orange-soft); border-radius: 12px; animation: store-rise .35s ease both; opacity: 0; }
 .pdp-team-hint[hidden] { display: none; }
 .pdp-team-hint i { margin-right: 6px; color: var(--orange); }
